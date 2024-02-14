@@ -15,12 +15,17 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Checkout from "./Checkout";
+import Cash from "./Cash";
+import Upi from "./Upi";
+import MapContentPage from "./MapContentPage";
 
 
 
 
 
 function App() {
+  const center = { lat: 59.95, lng: 30.33 }; // Initial center coordinates
+  const zoom = 11; // Initial zoom level
   return (
     
     
@@ -35,6 +40,9 @@ function App() {
         <Route path="/shopping" element={<Shopping />}></Route>
         <Route path="/checkout" element={<Checkout />}></Route>
         <Route path="/reports" element={<Reports />}></Route>
+        <Route path="/cash" element={<Cash />}></Route>
+        <Route path="/upi" element={<Upi />}></Route>
+        <Route path="/map" element={<MapContentPage center={center} zoom={zoom}  />}></Route>
       </Routes>
     </BrowserRouter>
 

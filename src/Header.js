@@ -69,6 +69,11 @@ const Header = () => {
                                 Reports
                             </Link>
                         </li>
+                        <li className="nav-menu-item">
+                            <Link to="/map" className="nav-link">
+                                Map
+                            </Link>
+                        </li>
                         <button
                         type="button"
                         className="logout-desktop-btn"

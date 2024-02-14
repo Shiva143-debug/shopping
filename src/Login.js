@@ -101,8 +101,8 @@ const Login = () => {
     </>
   );
 
-  const onRegisterClick=()=>{
-    
+  const onRegisterClick = () => {
+
   }
 
   return (
@@ -115,26 +115,26 @@ const Login = () => {
       />
 
       <div className='d-flex flex-column'>
-      <div className='d-flex'>
-        <button onClick={onRegisterClick} style={{backgroundColor:"white",border:"1px solid whitesmoke",width:"50%",padding:"5px"}}>Register</button>
-        <button style={{backgroundColor:"white",border:"1px solid whitesmoke",width:"50%",padding:"5px"}}>Login</button>
-      </div>
-      <form className="form-container" onSubmit={submitForm}>
+        <div className='d-flex'>
+          <button onClick={onRegisterClick} style={{ backgroundColor: "white", border: "1px solid whitesmoke", width: "50%", padding: "5px" }}>Register</button>
+          <button style={{ backgroundColor: "white", border: "1px solid whitesmoke", width: "50%", padding: "5px" }}>Login</button>
+        </div>
+        <form className="form-container" onSubmit={submitForm}>
 
 
-        <img
-          src="https://res.cloudinary.com/dxgbxchqm/image/upload/v1675668478/Standard_Collection_8_lbjbou.svg"
-          className="login-website-logo-desktop-img"
-          alt="website logo"
-        />
-        <h1 className="app-name">APP NAME</h1>
-        <div className="input-container">{renderUsernameField()}</div>
-        <div className="input-container">{renderPasswordField()}</div>
-        <button type="submit" className="login-button">
-          Login
-        </button>
-        {showSubmitError && <p className="error-message">{errorMsg}</p>}
-      </form>
+          {/* <img
+            src="https://res.cloudinary.com/dxgbxchqm/image/upload/v1675668478/Standard_Collection_8_lbjbou.svg"
+            className="login-website-logo-desktop-img"
+            alt="website logo"
+          /> */}
+          <h1 className="app-name">APP NAME</h1>
+          <div className="input-container">{renderUsernameField()}</div>
+          <div className="input-container">{renderPasswordField()}</div>
+          <button type="submit" className="login-button">
+            Login
+          </button>
+          {showSubmitError && <p className="error-message">{errorMsg}</p>}
+        </form>
       </div>
     </div>
   );

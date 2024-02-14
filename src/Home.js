@@ -136,6 +136,7 @@ function Home() {
         });
         
         navigate("/checkout", { state: { orderDetails } });
+        
 
     };
 
